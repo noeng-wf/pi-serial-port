@@ -1,4 +1,4 @@
-name: pi
+name: noeng-wf-pi-serial-usb
 version: 18-1
 summary: Raspberry Pi gadget
 description: |
@@ -235,3 +235,8 @@ slots:
   i2c-2:
     interface: i2c
     path: /dev/i2c-2
+  serial-port-usb:
+    interface: serial-port
+    usb-vendor: 0x1A86
+    usb-product: 0x7523
+    path: /dev/serial-port-usb
